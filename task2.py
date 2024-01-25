@@ -17,7 +17,6 @@ def get_numbers_ticket(min, max, quantity):
         list_of_numbers = [i for i in range(min, max + 1)]
         list_of_numbers = random.sample(list_of_numbers, quantity)
         list_of_numbers.sort()
-        print(list_of_numbers)
         return list_of_numbers
     except ValueError:
         print('Некоректно введено діапазон')
@@ -25,3 +24,4 @@ def get_numbers_ticket(min, max, quantity):
         print('Некоректний тип даних')
 
 lottery_numbers = get_numbers_ticket(1, 64, 7)
+print("Ваші лотерейні числа:", lottery_numbers)
